@@ -1,5 +1,5 @@
 " Vim plugin to load per-project .vimrc files.  This will look for files named
-" '.vimrc.local' in subdirectories of files you open and automatically source
+" '.subvimrc' in subdirectories of files you open and automatically source
 " them to enable one to make per project vimrc settings.
 " 
 " Language:	Python
@@ -27,7 +27,7 @@ import vim
 import os.path
 import sys
 
-VIMRC_NESTED = ".vimrc.local"
+VIMRC_NESTED = ".subvimrc"
 
 class SubVimRCInit(object):
     def __init__(self):
