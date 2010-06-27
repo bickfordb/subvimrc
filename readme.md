@@ -13,5 +13,8 @@ Here's how I use it.  I organize my programming projects into a directory named 
 ## Installation
 
     mkdir -p $HOME/.vim/plugins
-    cp $subvimrcdir/subvimrc.vim $HOME/.vim/plugins
+    curl http://github.com/bickfordb/subvimrc/raw/master/subvimrc.vim > $HOME/.vim/plugins/subvimrc.vim
 
+## Alternatives
+ 
+ * localvimrc: http://www.vim.org/scripts/script.php?script_id=441 (found this after I wrote this)
