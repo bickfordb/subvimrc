@@ -54,5 +54,7 @@ _subvimrc = SubVimRCInit()
 endpython
 endfunction
 
-call s:SubVimRCInit()
-au BufRead,BufNewFile * :py _subvimrc.on_read()
+if has("python")
+    call s:SubVimRCInit()
+    au BufRead,BufNewFile * :py _subvimrc.on_read()
+endif
