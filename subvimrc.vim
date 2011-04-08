@@ -35,6 +35,8 @@ class SubVimRCInit(object):
 
     def on_read(self):
         filename = vim.current.buffer.name
+        if not filename:
+            return
         filename = os.path.abspath(filename)
         dirname, _ = os.path.split(filename)
         while True:
